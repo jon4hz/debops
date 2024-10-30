@@ -624,8 +624,14 @@ apt__host_extra_architectures: []
 
 # .. envvar:: apt__purge_allowed [[[
 #
-# If disabled, APT will only autoremove and not purge packages.
+# If enabled, APT will purge unused packages.
 apt__purge_allowed: True
+
+                                                                   # ]]]
+# .. envvar:: apt__autoremove_allowed [[[
+#
+# If enabled, APT will autoremove unused packages.
+apt__autoremove_allowed: True
 
                                                                    # ]]]
 # .. envvar:: apt__purge_packages [[[
